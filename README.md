@@ -9,7 +9,8 @@
 
    例如 curl.exe 127.0.0.1:8000/ustc
 
-2. 结合前端，以网页的形式食用
+2. 结合[前端](https://github.com/Tyrion517/summer-camp-crawler-front)，以网页的形式食用
+   
 
 ## 添加学校的方式
 

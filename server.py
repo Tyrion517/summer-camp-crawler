@@ -16,10 +16,11 @@ for i in range(length):
     results[meta[i].get('name')] = result
 
 app = Flask(__name__)
-CORS(app)
+CORS(app) # 设置垮域名请求
 
+# controller函数
 @app.route('/ustc', methods=['GET'])
-@cross_origin()
+@cross_origin()  # 允许跨域名访问
 def ustc():
     print('data sent')
     return json.dumps(results.get('ustc'), indent=4, ensure_ascii=False)
