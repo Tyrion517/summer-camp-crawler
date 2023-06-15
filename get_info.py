@@ -1,9 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-from model.Camp import Camp
-
-
 def get_title_addr(URL: str, selector: str, encoding='utf-8') -> list:
     """
 
