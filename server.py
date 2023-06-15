@@ -23,6 +23,7 @@ CORS(app)
 def ustc():
     print('data sent')
     return json.dumps(results.get('ustc'), indent=4, ensure_ascii=False)
+    # indent=4设置换行缩进，ensure_ascii保证中文正常显示
 
 
 @app.route('/peking', methods=['GET'])
