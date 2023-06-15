@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+from model.Camp import Camp
+
 
 def get_title_addr(URL: str, selector: str, encoding='utf-8') -> list:
     """
@@ -20,6 +22,6 @@ def get_title_addr(URL: str, selector: str, encoding='utf-8') -> list:
         addr = data[i].get("href")  # 夏令营网页地址,若href为相对地址，则前要加URL
         if not 'http' in addr:
             addr = URL + addr
-        if title:
+        if title:  # 去除选中HTML部分末尾的空元素
             result.append({'title': f'{title}', 'addr': f'{addr}'})  # 储存到字典中去
     return result
