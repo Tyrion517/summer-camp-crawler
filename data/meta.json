@@ -1,0 +1,14 @@
+[
+  {
+    "name": "ustc",
+    "addr": "https://xly.ustc.edu.cn",
+    "selector": "div.top10 ul li a",
+    "encoding": "gbk"
+  },
+  {
+    "name": "peking",
+    "addr": "https://admission.pku.edu.cn/xly/index.htm",
+    "selector": "div ul li a.clearfix",
+    "encoding": "utf-8"
+  }
+]
